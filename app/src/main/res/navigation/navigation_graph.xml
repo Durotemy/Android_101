@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/blossomFragment">
+
+    <fragment
+        android:id="@+id/blossomFragment"
+        android:name="com.sodiq.android101.BlossomFragment"
+        tools:layout="@layout/fragment_blossom"
+        android:label="BlossomFragment" >
+        <action
+            android:id="@+id/action_blossomFragment_to_blossomInputFragment"
+            app:destination="@id/blossomInputFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blossomInputFragment"
+        android:name="com.sodiq.android101.BlossomInputFragment"
+        tools:layout="@layout/fragment_input_blossom"
+        android:label="BlossomInputFragment" />
+</navigation>
